@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -28,6 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
@@ -53,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624015677944</updated>
       <workItem from="1624015681827" duration="698000" />
-      <workItem from="1624025257689" duration="689000" />
+      <workItem from="1624025257689" duration="3187000" />
     </task>
     <servers />
   </component>
