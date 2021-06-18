@@ -3,6 +3,12 @@
 */
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.card{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -62,7 +68,7 @@ a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #b6d7a8;
     color: #fff;
     transition: all 0.3s;
 }
