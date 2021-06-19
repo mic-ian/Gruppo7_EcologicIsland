@@ -111,16 +111,18 @@
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="validatedCustomFile">
                             <label class="custom-file-label" for="validatedCustomFile">Allega una foto...</label>
-                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+
                         </div>
-
-                        <div class="form-group" style="margin-top: 15px ">
-                            <button type="submit" class="btn btn-primary">Invia Richiesta</button>
-                        </div>
-
-
 
                     </form>
+
+                    <button class="btn btn-primary" onclick="sendReq()">Invia Richiesta</button>
+
+                    <div id="messageSucc" style="visibility: hidden">
+                        <div class="alert alert-success" role="alert">
+                            Richiesta effettuata con successo! <a href="./index.html" class="alert-link">Torna alla home</a>.
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -128,6 +130,16 @@
     </div>
 
 </div>
+
+<script>
+
+        function sendReq(){
+            var x = document.getElementById('messageSucc');
+            x.style.visibility = 'visible';
+        }
+
+
+</script>
 
 <!-- jQuery CDN - Slim version (=without AJAX) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
