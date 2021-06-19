@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -16,109 +15,122 @@
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-    <!-- Main CSS-->
-    <link href="FormStyle.css" rel="stylesheet" media="all">
 </head>
 
 <body>
 
-
-<!-- Sidebar  -->
-<nav id="sidebar">
-    <div class="sidebar-header">
-        <h3>Bootstrap Sidebar</h3>
-    </div>
-
-    <ul class="list-unstyled components">
-        <p>Dummy Heading</p>
-
-        <li>
-            <a href="./index.html">Home</a>
-        </li>
-
-        <li>
-            <a href="./NuovaRichiesta.html">Effettua richiesta</a>
-        </li>
-        <li>
-            <a href="./InfoSmaltimento.html">Info smaltimento</a>
-        </li>
-        <li>
-            <a href="./LeMieRichieste.html">Le mie richieste</a>
-        </li>
-        <li>
-            <a href="#">Logout</a>
-        </li>
-    </ul>
-
-</nav>
-
-<!-- Page Content  -->
-<div class="container">
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <i class="fa fa-address-card" style="font-size:36px"></i>
+            <h3>Benvenuto Utente</h3>
+        </div>
 
 
-        <div class="wrapper wrapper--w900">
-            <div class="card card-6">
-                <div class="card-heading">
-                    <h2 class="title">Effettua la tua richiesta</h2>
-                </div>
-                <div class="card-body">
-                    <form method="POST">
-                        <div class="form-row">
-                            <div class="name">Nome</div>
-                            <div class="value">
-                                <input class="input--style-6" type="text" name="full_name">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">Cognome</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <input class="input--style-6" type="email" name="cognome">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">Indirizzo</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <input class="input--style-6" type="email" name="address">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">Descrizione</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <textarea class="textarea--style-6" name="descr"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">Allega una foto</div>
-                            <div class="value">
-                                <div class="input-group js-input-file">
-                                    <input class="input-file" type="file" name="file_cv" id="file">
-                                    <label class="label--file" for="file">Invia foto</label>
-                                    <span class="input-file__info"></span>
-                                </div>
-                                <div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn--radius-2 btn--blue-2" type="submit">Invia Richiesta</button>
+
+        <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="./NuovaRichiesta.html">Effettua richiesta</a>
+            </li>
+            <li>
+                <a href="./InfoSmaltimento.html">Info smaltimento</a>
+            </li>
+            <li>
+                <a href="./LeMieRichieste.html">Le mie richieste</a>
+            </li>
+            <li>
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav justify-content-center">
+                        <h2>Effettua una nuova richiesta di smaltimento</h2>
+                    </ul>
                 </div>
             </div>
+        </nav>
+
+
+
+
+
+        <div id="accordion">
+
+            <div class="card">
+                <h5 class="card-header">Inserisci i tuoi dati</h5>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputName1">Nome</label>
+                            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Inserisci il nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputCogn1">Cognome</label>
+                            <input type="cognome" class="form-control" id="exampleInputCogn1" placeholder="Inserisci il cognome">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputAddress">Indirizzo</label>
+                            <input type="address" class="form-control" id="exampleInputAddress" placeholder="Inserisci il tuo indirizzo">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputDescr">Descrizione</label>
+                            <input type="decsription" class="form-control" id="exampleInputDescr" placeholder="Inserisci una descrizione">
+                        </div>
+
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="validatedCustomFile">
+                            <label class="custom-file-label" for="validatedCustomFile">Allega una foto...</label>
+                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 15px ">
+                            <button type="submit" class="btn btn-primary">Invia Richiesta</button>
+                        </div>
+
+
+
+                    </form>
+                </div>
+            </div>
+
         </div>
+
+
+
+
+    </div>
 
 </div>
 
 
 
+
 </body>
+
 </html>
