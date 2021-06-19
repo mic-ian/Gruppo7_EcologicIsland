@@ -168,6 +168,15 @@ a.article:hover {
     width: 100%;
 }
 
+div.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
