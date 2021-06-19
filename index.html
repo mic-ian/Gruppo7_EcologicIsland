@@ -32,7 +32,7 @@
 </head>
 
 <body>
-
+<script type="text/javascript" src="js/search.js"></script>
 <div class="wrapper">
     <!-- Sidebar  -->
     <nav id="sidebar">
@@ -75,17 +75,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <form class="form-inline">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                            <div class="form-inline">
+                                <input class="form-control mr-sm-2" placeholder="Search"
                                        aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
+                                <button class="btn btn-outline-success my-2 my-sm-0" onclick="validate()">Search
+                                </button>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+        <div>
+            <p id="testo">yooooooo</p>
+        </div>
         <h2>Collapsible Sidebar Using Bootstrap 4</h2>
 
         <div class="row">
