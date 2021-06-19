@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Informazioni Richiesta</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -14,6 +16,10 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
             integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
@@ -22,57 +28,100 @@
             integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
             crossorigin="anonymous"></script>
 
-    <title>Info Richiesta</title>
-    <link href="FormStyle.css" rel="stylesheet" media="all">
 </head>
 <body>
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <i class="fa fa-address-card" style="font-size:36px"></i>
+            <h3>Benvenuto Utente</h3>
+        </div>
 
 
-<div class="container">
+        <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="./NuovaRichiesta.html">Effettua richiesta</a>
+            </li>
+            <li>
+                <a href="./InfoSmaltimento.html">Info smaltimento</a>
+            </li>
+            <li>
+                <a href="./LeMieRichieste.html">Le mie richieste</a>
+            </li>
+            <li>
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
 
 
-    <div class="wrapper wrapper--w900">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                       aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
         <div class="card card-6">
             <div class="card-heading">
-                <h4>Informazioni sulla tua richiesta</h4> <br>
+                <h3 style="align-content: center; align-items: center; text-align: center">
+                    <span style="text-align: center;align-items: center;align-content:center"
+                          class="badge badge-info">Informazioni sulla tua richiesta</span>
+                </h3>
             </div>
-            <div class="card-body">
-                <form method="POST">
-                    <div class="form-row">
-                        <div class="name">Data richiesta</div>
-                        <div class="name">20-02-2021</div>
-                    </div>
-                    <div class="form-row">
-                        <div class="name">Descrizione</div>
-                        <div class="value">Lavatrice, 40kg, colore bianco</div>
-
-                    </div>
-                    <div class="form-row">
-                        <div class="name">Indirizzo</div>
-                        <div class="name">Via Roma, 13 (NA)</div>
-
-                    </div>
-                    <div class="form-row">
-                        <div class="name">Stato della richiesta</div>
-                        <div class="name">In corso</div>
-
-                    </div>
-
-                </form>
-            </div>
-            <div style="alignment: center; align-self: center">
-                <a href="index.html">
-                    <button class="btn btn--radius-2 btn--blue-2" style="align-items: center" type="submit">Chiudi
-                        Richiesta
-                    </button>
-                </a>
-            </div>
+            <table align="center" class="table">
+                <tbody>
+                <tr>
+                    <th scope="row">Data richiesta</th>
+                    <td>10-02-2021</td>
+                </tr>
+                <tr>
+                    <th scope="row">Descrizione</th>
+                    <td>Lavatrice, 20kg, colore nero</td>
+                </tr>
+                <tr>
+                    <th scope="row">Indirizzo</th>
+                    <td>Via Leopari, 55 (SA)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stato della richiesta</th>
+                    <td>In corso</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
+        <div style="alignment: center; align-self: center">
+            <a href="index.html">
+                <button class="btn btn-secondary" style="align-items: center" type="submit">Chiudi
+                    Richiesta
+                </button>
+            </a>
+        </div>
+
+
     </div>
-
-
 </div>
-
-
 </body>
 </html>
